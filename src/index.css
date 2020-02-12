@@ -9,6 +9,9 @@ body {
   justify-content: space-evenly;
 
 }
+.counties {
+  fill: grey;
+}
 #Donald {
   fill:red;
 }
