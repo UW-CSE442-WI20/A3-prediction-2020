@@ -1,0 +1,22 @@
+header {
+  text-align: center;
+}
+
+body  {
+  display: column;
+  flex-direction: row;
+  align-items:  center;
+  justify-content: space-evenly;
+}
+
+#county_names {
+  width:150px;
+}
+.counties {
+   fill: grey;
+   stroke: #333;
+   stroke-width: 0.5;
+ }
+
+
+/*# sourceMappingURL=/src.9ad09f98.css.map */
