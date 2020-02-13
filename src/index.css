@@ -10,15 +10,7 @@ body {
 
 }
 .counties {
-  fill: grey;
-}
-#Donald {
-  fill:red;
-}
-#Hillary {
-  fill:blue;
-}
- .counties {
+   fill: grey;
    stroke: #333;
    stroke-width: 0.5;
  }
