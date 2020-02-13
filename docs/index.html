@@ -1,1 +1,65 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Election Trends</title><link rel="stylesheet" href="https://uw-cse442-wi20.github.io/A3-prediction-2020/src.60591339.css"></head><body> <header> <h1>Election Trends from 2000-2016</h1> </header> <div class="search"> <select id="county_names"> </select> <button id="Enter">Enter</button> <div id="map"></div> </div> <div class="chooseYear"> <button id="one"> 2000</button> <button id="two"> 2004</button> <button id="three"> 2008</button> <button id="four"> 2012</button> <button id="five"> 2016</button> </div> <script src="https://uw-cse442-wi20.github.io/A3-prediction-2020/src.884751cf.js"></script> </body></html>
+
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+    <title>Election Trends</title>
+    <link rel="stylesheet" href="https://uw-cse442-wi20.github.io/A3-prediction-2020/src.60591339.css">
+    <p<
+<body> 
+    <header> <h1>Election Trends from 2000-2016</h1> </header> 
+    <p>
+        Click the buttons at the bottom of the page to see what parties counties voted during the presidential elections.
+        <br>
+        Find a county in the drop down menu. It will flash to show you it's location and red if it was republican, blue if it voted democrat.
+    </p>
+
+
+
+    
+    
+
+    <div class="search"> <select id="county_names"> </select> <button id="Enter">Enter</button> </div>
+
+    <p>
+        <br> <br>
+        <b>Key</b>
+        <br>
+
+        <br>
+        <svg width="16" height="16">
+            <rect width="15" height="15" style="fill: red;stroke-width:1;stroke:rgb(0,0,0)" />
+          </svg> 
+        Switched to Republican. (Voted Republican this election, voted democrat in the last election)
+
+        <br>
+        <svg width="16" height="16">
+            <rect width="15" height="15" style="fill: pink;stroke-width:1;stroke:rgb(0,0,0)" />
+          </svg> 
+        Stayed Republican. (Voted Republican this election, voted Republican in the last election)
+
+        <br>
+        <svg width="16" height="16">
+            <rect width="15" height="15" style="fill: blue;stroke-width:1;stroke:rgb(0,0,0)" />
+          </svg> 
+        Switched to Democrat. (Voted democrat this election, voted republican in the last election)
+        
+        <br>
+        <svg width="16" height="16">
+            <rect width="15" height="15" style="fill: lightblue;stroke-width:1;stroke:rgb(0,0,0)" />
+          </svg> 
+        Stayed Democrat. (Voted democrat this election, voted democrat in the last election)
+
+        
+    </p>
+    
+    <div id="map"></div> </div> 
+    
+    <div class="chooseYear"> 
+        <button id="one"> 2000</button> 
+        <button id="two"> 2004</button> 
+        <button id="three"> 2008</button> 
+        <button id="four"> 2012</button> 
+        <button id="five"> 2016</button>
+    </div> 
+
+    <script src="https://uw-cse442-wi20.github.io/A3-prediction-2020/src.884751cf.js"></script>
+ </body>
+ </html>
