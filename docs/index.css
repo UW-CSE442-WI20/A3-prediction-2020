@@ -1,0 +1,16 @@
+header {
+  text-align: center;
+}
+
+body {
+  display: column;
+  flex-direction: row;
+  align-items:  center;
+  justify-content: space-evenly;
+
+}
+.counties {
+   fill: grey;
+   stroke: #333;
+   stroke-width: 0.5;
+ }
