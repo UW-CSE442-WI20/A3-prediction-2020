@@ -30,8 +30,7 @@
                 if (temp_id.length == 4) {
                   temp_id = "0".concat(temp_id);
                 }
-                winner.push({id:temp_id,winner_name:[data[i]["party2000"] + "2000",data[i]["party2004"] + "2004",
-                    data[i]["party2008"] + "2008",data[i]["party2016"] + "2016"]});  
+                winner.push({id:temp_id,winner_name:[data[i]["party2000"] + "2000",data[i]["party2004"] + "2004",data[i]["party2008"] + "2008",data[i]["party2012"] + "2012",data[i]["party2016"] + "2016"],switch:[data[i]["Switch_2000_2004"] + "2004",data[i]["Switch_2004_2008"] + "2008",data[i]["Switch_2008_2012"] + "2012",data[i]["Switch_2012_2016"] + "2016"]}); 
             }
             drawScreen(winner);         
         });}
@@ -55,6 +54,9 @@
                      for (var i = 0; i < 4; i++) {
                          ret +=  " " + temp.winner_name[i];
                      }
+//					 for (var i = 0; i < 3; i++) {
+//						 ret += " " + temp.switch[i];
+//					 }
                     return ret;
                  };})
                .attr('d', pathGenerator);
@@ -68,23 +70,27 @@
 
         if (year == 1) {
             d3.selectAll(".republican2000").style("fill", "red");
-            d3.selectAll(".democrat2000").style("fill", "lightblue");
+            d3.selectAll(".democrat2000").style("fill", "blue");
         }
         else if (year == 2) {
-            d3.selectAll(".republican2004").style("fill", "lightred");
-            d3.selectAll(".democrat2004").style("fill", "lightblue");
+			d3.selectAll(".republican2004").style("fill", "red");
+            d3.selectAll(".democrat2004").style("fill", "blue");
+//			d3.selectAll(".republican2004").select(".False2004").style("fill", "pink");
+//            d3.selectAll(".democrat2004").select(".False2004").style("fill", "lightblue");
+//			d3.selectAll(".republican2004").select(".True2004").style("fill", "red");
+//            d3.selectAll(".democrat2004").select(".True2004").style("fill", "blue");
         }
         else if (year == 3) {
-            d3.selectAll(".republican2008").style("fill", "lightred");
-            d3.selectAll(".democrat2008").style("fill", "lightblue");
+            d3.selectAll(".republican2008").style("fill", "red");
+            d3.selectAll(".democrat2008").style("fill", "blue");
         }
         else if (year == 4) {
-            d3.selectAll(".republican2012").style("fill", "lightred");
-            d3.selectAll(".democrat2012").style("fill", "lightblue");
+            d3.selectAll(".republican2012").style("fill", "red");
+            d3.selectAll(".democrat2012").style("fill", "blue");
         }
         else if (year == 5) {
-            d3.selectAll(".republican2016").style("fill", "lightred");
-            d3.selectAll(".democrat2016").style("fill", "lightblue");
+            d3.selectAll(".republican2016").style("fill", "red");
+            d3.selectAll(".democrat2016").style("fill", "blue");
         }
             
     }
