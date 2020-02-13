@@ -2,12 +2,15 @@ header {
   text-align: center;
 }
 
-body {
+body  {
   display: column;
   flex-direction: row;
   align-items:  center;
   justify-content: space-evenly;
+}
 
+#county_names {
+  width:150px;
 }
 .counties {
    fill: grey;
